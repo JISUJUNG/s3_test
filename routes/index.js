@@ -18,8 +18,8 @@ var storage = s3({
     filename : function(req,file,cb){
         cb(null,Date.now() +"." + file.originalname.split('.').pop());
     },
-    bucket : 'jisubucket'
-    region : 'Seoul'
+    bucket : 'ano'
+    region : 'ano'
 });
 var upload = multer({ storage : storage});
 
